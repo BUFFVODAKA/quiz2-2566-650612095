@@ -1,6 +1,7 @@
 "use client";
 
 import { PostOwner } from "@/components/PostOwner";
+import { Comment } from "@/components/Comment";
 
 export default function HomePage() {
   return (
@@ -14,9 +15,10 @@ export default function HomePage() {
         className="mx-auto p-3 rounded rounded-3 shadow-sm bg-white"
       >
         {/* Post Owner Example*/}
-        <div className="vstack gap-3">
-          <PostOwner/>
-          {/* <div className="d-flex align-items-center gap-3">
+        <PostOwner/>
+        {/* <div className="vstack gap-3">
+          
+          <div className="d-flex align-items-center gap-3">
             <img
               src="/profileImages/IMG_8748.jpg"
               width="48"
@@ -25,7 +27,7 @@ export default function HomePage() {
               style={{ objectFit: "cover" }}
             />
             <span className="fw-semibold fs-5">Poottipong kunang 650612095</span>
-          </div> */}
+          </div>
 
           <span>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</span>
 
@@ -34,9 +36,10 @@ export default function HomePage() {
             <span className="text-muted">100 คน</span>
           </div>
           <hr className="m-0 border" />
-        </div>
+        </div> */}
 
         {/* Comment Example */}
+        {/* <Comment/> */}
         <div className="d-flex gap-2 my-2">
           <img
             src="/profileImages/lisa.jpg"
