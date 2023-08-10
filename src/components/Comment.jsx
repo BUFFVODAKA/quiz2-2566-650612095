@@ -1,7 +1,6 @@
 "use client"
 
 import { comments } from "@/libs/comments";
-import { Reply } from "@/components/Reply";
 
 export const Comment = ({
   userImagePath = "/profileImages/lisa.jpg",
@@ -10,6 +9,13 @@ export const Comment = ({
   likeNum ="999 คน",
   replies,
 }) => {
+
+  // <div className="Comment">
+  //   {comments.map((Comment)=>
+  //     <div className="Comment">{comments}</div>
+  //   )}
+  // </div>
+
   return (
     <div>
       <div className="d-flex gap-2 my-2">
@@ -35,6 +41,8 @@ export const Comment = ({
         </div>
       {/* map-loop render Reply component here */}
       {replies}
+
+  
     </div>
   );
 };
